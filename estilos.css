@@ -1,0 +1,227 @@
+/* ===========================================
+   estilos.css agregados ami pagina webs html
+   =========================================== */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* MENÚ DE NAVEGACIÓN*/
+.navbar, .bg-dark, header nav {
+    background-color: #212529 !important;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    white-space: nowrap !important;
+}
+
+header nav ul li a, .nav-link {
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover, header nav ul li a.active {
+    color: #0d6efd !important;
+}
+
+/* BUSCADOR DEL HEADER */
+.d-flex, form {
+    display: flex;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+form input, .form-control {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+form button, .btn-outline-primary {
+    background-color: transparent;
+    color: #0d6efd;
+    border: 2px solid #0d6efd;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+form button:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+/*BIENVENIDA */
+#presentacion, .bg-primary {
+    background-color: #0d6efd !important;
+    color: white !important;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#presentacion h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* CONTENEDOR DE PRODUCTOS*/
+.row, .contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 0 15px;
+}
+
+.col-md-4, article {
+    flex: 1 1 300px;
+    max-width: 350px;
+}
+
+/* TARJETAS DE PRODUCTOS */
+.card-producto, article.card {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* EFECTOS HOVER */
+.card-producto:hover, article.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+    border-color: #0d6efd;
+}
+
+.card-producto img, article.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    animation: imageGlow 4s infinite ease-in-out;
+}
+
+/* BOTONES DE COMPRA CON ANIMACIÓN*/
+.btn-comprar, article button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn-comprar:hover, article button:hover {
+    animation: pulseEffect 0.6s infinite;
+    background-color: #0b5ed7 !important;
+}
+
+/* SECCIONES */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+    color: #212529;
+}
+
+p.text-center {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    animation: footerReveal 1.2s ease-in;
+}
+
+/* --- ANIMACIONES CSS --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseEffect {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-30px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes imageGlow {
+    0% { filter: brightness(0.95); }
+    50% { filter: brightness(1.03); }
+    100% { filter: brightness(0.95); }
+}
+
+@keyframes footerReveal {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1, h2 { animation: fadeIn 1s ease-out forwards; }
+main section { animation: slideInLeft 0.8s ease-out forwards; }
+
+/* Controlar tamaño de imágenes desde CSS */
+.card-producto img {
+    width: 300px !important;
+    height: auto !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar form.d-flex {
+    margin-left: auto !important;
+    min-width: 280px !important;
+}
+
+
+
+
+
+
+

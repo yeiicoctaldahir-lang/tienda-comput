@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual - Comput</title>
+  <!-- Enlace Oficial de Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Tienda Comput</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte y Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+                <form class="d-flex" action="#" method="get">
+
+                    <input class="form-control me-2" type="search" placeholder="Buscar computadoras..." name="buscar">
+                    <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                </form>
+            </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="presentacion" class="bg-primary text-white p-5 rounded shadow mb-5 text-center">
+            <h1 class="display-5 fw-bold">Equipos de alto rendimiento con procesadores de última generación y discos SSD para máxima velocidad.</h1>
+        </section>
+
+        <!-- Producto de Oferta  -->
+        <section id="ofertas" class="mb-5">
+            <h2 class="text-center mb-3">Ofertas Exclusivas</h2>
+            <p class="text-center text-muted mb-4">Aprovecha los descuentos de la semana en equipos seleccionados.</p>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm card-producto p-3 text-center">
+                        <h3 class="h5 card-title">MONITOR LG, ULTRAGEAR CURVO G6 34</h3>
+                        <img src="imagenesindex/monitor .jpg" class="img-fluid mx-auto my-3 rounded" alt="monitor Gamer en oferta">
+                        <div class="card-body">
+                            <p class="text-muted m-0">Precio anterior: <del>S/. 1000</del></p>
+                            <p class="text-danger fs-5"><strong>Precio oferta: S/. 900</strong></p>
+                            <button type="button" class="btn btn-primary w-100 btn-comprar">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm card-producto p-3 text-center">
+                        <h3 class="h5 card-title">CASE CORSAIR, SIN FUENTE VIDRIO TEMPLADO MID TOWER</h3>
+                        <img src="imagenesindex/case .jpg" class="img-fluid mx-auto my-3 rounded" alt="Case en oferta">
+                        <div class="card-body">
+                            <p class="text-muted m-0">Precio anterior: <del>S/. 1500</del></p>
+                            <p class="text-danger fs-5"><strong>Precio oferta: S/. 1200</strong></p>
+                            <button type="button" class="btn btn-primary w-100 btn-comprar">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm card-producto p-3 text-center">
+                        <h3 class="h5 card-title">FUENTE DE PODER SEASONIC PRIME, 80 PLUS TITANUM FULL MODULAR</h3>
+                        <img src="imagenesindex/fuente .jpg" class="img-fluid mx-auto my-3 rounded" alt="fuente de poder en oferta">
+                        <div class="card-body">
+                            <p class="text-muted m-0">Precio anterior: <del>S/. 400</del></p>
+                            <p class="text-danger fs-5"><strong>Precio oferta: S/. 320</strong></p>
+                            <button type="button" class="btn btn-primary w-100 btn-comprar">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE LOS MÁS VENDIDOS -->
+        <section id="mas-vendidos" class="mb-5">
+            <h2 class="text-center mb-3">Los Más Vendidos</h2>
+            <p class="text-center text-muted mb-4">Los componentes y equipos preferidos por nuestra comunidad.</p>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm card-producto p-3 text-center">
+                        <h3 class="h5 card-title">Procesador Ryzen 5</h3>
+                        <img src="imagenesindex/procesador.jpg" class="img-fluid mx-auto my-3 rounded" alt="Procesador Ryzen">
+                        <div class="card-body">
+                            <p class="fs-5">Precio: S/. 850</p>
+                            <button type="button" class="btn btn-primary w-100 btn-comprar">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm card-producto p-3 text-center">
+                        <h3 class="h5 card-title">Memoria RAM 16GB RGB</h3>
+                        <img src="imagenesindex/memoria.jpg" class="img-fluid mx-auto my-3 rounded" alt="Memoria RAM RGB">
+                        <div class="card-body">
+                            <p class="fs-5">Precio: S/. 299</p>
+                            <button type="button" class="btn btn-primary w-100 btn-comprar">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm card-producto p-3 text-center">
+                        <h3 class="h5 card-title">PC Streamer Ryzen 7</h3>
+                        <img src="imagenesindex/pc.jpg" class="img-fluid mx-auto my-3 rounded" alt="Pc para streaming">
+                        <div class="card-body">
+                            <p class="fs-5">Precio: S/. 5200</p>
+                            <button type="button" class="btn btn-primary w-100 btn-comprar">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="m-0">Tienda comput. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

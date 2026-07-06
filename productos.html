@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Equipos y Accesorios</title>
+    <!-- Bootstrap 5 CSS Oficial -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Tienda Comput</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte y Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <form class="d-flex ms-lg-5" action="#" method="get">
+                        <input class="form-control me-2" type="search" placeholder="Buscar computadoras..." name="buscar">
+                        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-5 fw-bold">Líneas de Productos</h1>
+
+        <!-- SECCIÓN COMPUTADORAS -->
+        <section id="computadoras" class="mb-5">
+            <h2 class="border-bottom pb-2 mb-4">Computadoras Completas</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm card-producto p-3 text-center">
+                        <h3 class="h5 card-title">PC de Escritorio Ryzen 7 5700G (24" FHD)</h3>
+                        <img src="imagenesindex/computadora.jpg" class="img-fluid mx-auto my-3 rounded" alt="PC de escritorio">
+                        <div class="card-body">
+                            <p class="card-text text-muted small">Especificaciones: Gráficos integrados Vega, 16GB de RAM, 500GB SSD y Monitor Full HD.</p>
+                            <p class="text-primary fs-5"><strong>Precio: S/ 2,359.00</strong></p>
+                            <button type="button" class="btn btn-primary w-100 btn-comprar">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm card-producto p-3 text-center">
+                        <h3 class="h5 card-title">PC Gamer Ryzen 7 5700G (27" FHD)</h3>
+                        <img src="imagenesindex/computadora1.jpg" class="img-fluid mx-auto my-3 rounded" alt="PC Gamer">
+                        <div class="card-body">
+                            <p class="card-text text-muted small">Especificaciones: Procesador de ocho núcleos, 16GB RAM, SSD de 1TB y Monitor de 27 pulgadas.</p>
+                            <p class="text-primary fs-5"><strong>Precio: S/ 6,000.00</strong></p>
+                            <button type="button" class="btn btn-primary w-100 btn-comprar">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm card-producto p-3 text-center">
+                        <h3 class="h5 card-title">PC de Escritorio Intel Core i7 3770 (24" FHD)</h3>
+                        <img src="imagenesindex/computadora2.jpg" class="img-fluid mx-auto my-3 rounded" alt="PC oficina">
+                        <div class="card-body">
+                            <p class="card-text text-muted small">Especificaciones: Procesador Intel Core i7, 16GB de RAM, 500GB SSD y Monitor Full HD.</p>
+                            <p class="text-primary fs-5"><strong>Precio: S/ 5,599.90</strong></p>
+                            <button type="button" class="btn btn-primary w-100 btn-comprar">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PERIFÉRICOS PC -->
+        <section id="perifericos" class="mb-5">
+            <h2 class="border-bottom pb-2 mb-4">Periféricos de PC</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm card-producto p-3 text-center">
+                        <h3 class="h5 card-title">Audífono Logitech G G321 Lightspeed</h3>
+                        <img src="imagenesindex/audifono.jpg" class="img-fluid mx-auto my-3 rounded" alt="Audífonos Logitech">
+                        <div class="card-body">
+                            <p class="card-text text-muted small">Especificaciones: Conexión Wireless y Bluetooth de alta fidelidad con micrófono.</p>
+                            <p class="text-primary fs-5"><strong>Precio: S/ 199.99</strong></p>
+                            <button type="button" class="btn btn-primary w-100 btn-comprar">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm card-producto p-3 text-center">
+                        <h3 class="h5 card-title">Parlante Micronics Boss Mic S305</h3>
+                        <img src="imagenesindex/parlante.jpg" class="img-fluid mx-auto my-3 rounded" alt="Parlante Micronics">
+                        <div class="card-body">
+                            <p class="card-text text-muted small">Especificaciones: Sistema de sonido estéreo 2.0 y alimentación por USB.</p>
+                            <p class="text-primary fs-5"><strong>Precio: S/ 180.99</strong></p>
+                            <button type="button" class="btn btn-primary w-100 btn-comprar">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm card-producto p-3 text-center">
+                        <h3 class="h5 card-title">Teclado Gamer RGB</h3>
+                        <img src="imagenesindex/teclado.jpg" class="img-fluid mx-auto my-3 rounded" alt="Teclado Gamer">
+                        <div class="card-body">
+                            <p class="card-text text-muted small">Especificaciones: Teclado inalámbrico mecánico de alto rendimiento.</p>
+                            <p class="text-primary fs-5"><strong>Precio: S/ 90.99</strong></p>
+                            <button type="button" class="btn btn-primary w-100 btn-comprar">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN STREAMING -->
+        <section id="streaming" class="mb-5">
+            <h2 class="border-bottom pb-2 mb-4">Productos para Streaming</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm card-producto p-3 text-center">
+                        <h3 class="h5 card-title">Tarjeta de Captura Elgato Cam Link 4K</h3>
+                        <img src="imagenesindex/camara.1jpg.avif" class="img-fluid mx-auto my-3 rounded" alt="Elgato Cam Link">
+                        <div class="card-body">
+                            <p class="card-text text-muted small">Especificaciones: Captura externa USB para conectar cámaras profesionales a 4K.</p>
+                            <p class="text-primary fs-5"><strong>Precio: S/ 367.53</strong></p>
+                            <button type="button" class="btn btn-primary w-100 btn-comprar">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+                                <div class="col-md-4">
+                    <article class="card h-100 shadow-sm card-producto p-3 text-center">
+                        <h3 class="h5 card-title">Mezclador Maono Caster Lite</h3>
+                        <img src="imagenesindex/maono.jpg" class="img-fluid mx-auto my-3 rounded" alt="Mezclador Maono">
+                        <div class="card-body">
+                            <p class="card-text text-muted small">Especificaciones: Interfaz mezcladora ideal para transmisiones en vivo con micrófono.</p>
+                            <p class="text-primary fs-5"><strong>Precio: S/ 333.70</strong></p>
+                            <button type="button" class="btn btn-primary w-100 btn-comprar">Comprar</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="m-0">Tienda Comput. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+              
